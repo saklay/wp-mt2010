@@ -1,0 +1,295 @@
+/*
+Theme Name: Moontoast
+Theme URI: http://www.Moontoast.com/
+Description: Moontoast
+Version: 1.0
+Author: Arnel Estanislao
+Author URI: http://www.Moontoast.com/
+Tags: two column, blue, social commerce
+*/
+
+body {
+	background: #4775a3 url(images/bg_background.png) top repeat-x;
+	font-family: Helvetica, Arial, sans-serif;
+  font-smooth:always;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 0px;
+  margin: 0px;
+}
+/* webkit hack for body background */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	body {
+		background: #486ca2 url(images/bg_background.png) top repeat-x;
+	}
+}
+
+h1, h2, h3, h5 { color: #369; font-smooth:always; margin-top: 0;}
+h1 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; line-height: 28px; font-weight: normal; margin-top: 0;}
+h5 { font-size: 16px; font-weight: bold; margin: 0;}
+
+a { text-decoration: none; color: #fff; }
+a:hover { color: #9c6; }
+
+img { border: none; }
+
+ol, ul { list-style: none; }
+
+hr {border: none 0; border-top: 1px solid #ccc; width: 100%; height: 1px; }
+
+
+/**************************
+		Content Area
+**************************/
+
+.container { width: 960px; margin: 0 auto; }
+
+.header { height: 93px; }
+
+.logo {
+	background: url(images/moontoast_logo.png) no-repeat;
+	width: 283px;
+	height: 93px;
+	text-indent: -9999px;
+	display: block;
+	margin-left: -30px;
+}
+
+.content {
+	background: #fff url(images/bg_container.png) repeat-x;
+	border-top: 5px solid #9c6;
+	color: #4e4e4e;
+}
+
+.sub_content {
+	padding-left: 30px;
+	margin-left: 30px;
+	border-left: 1px solid #ccc;
+}
+.sub_content p { line-height: 20px; }
+.sub_content a { color: #369; text-decoration: underline; }
+.sub_content h6 { margin: 0; margin-bottom: 10px; font-weight: normal; font-size: 24px; color: #369; }
+.sub_content h4 { margin: 25px 0 5px 0; /*margin-top: 25px;*/ font-size: 22px; color: #369; }
+.sub_content h4 a { text-decoration: none; }
+.sub_content li { float: none; list-style: disc; margin: 5px 0 5px 15px; }
+
+.border_hack { margin-bottom: -2000px; padding-bottom: 2000px; }
+
+.left { float: left; }
+.right { float: right; }
+
+.footer {
+	background-color: #444c53;
+	border-top: 5px solid #9c6;
+	padding: 30px 45px 25px 45px;
+}
+.footer h2 { font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #fff; margin-bottom: 5px; }
+.footer a { color: #9c6; }
+
+.footer_form { width: 290px; }
+
+.copyright {
+	font-size: 11px;
+	text-align:right;
+	font-weight: normal;
+}
+
+.clearAll { clear: both; }
+
+.underline { text-decoration: underline; }
+
+
+/**************************
+		Navigation
+**************************/
+
+.static_nav { margin: 15px 10px 10px 0; float: right; *margin-bottom: 5px; color: #6f88a0; font-size: 10px; }
+.static_nav span { padding: 0 5px; font-size: 10px; }
+.static_nav span a { font-weight: bold; text-transform: uppercase; }
+span.social_icon { padding: 0 2px; }
+/* webkit hack for class static_nav */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.static_nav {
+		margin-bottom: 0;
+	}
+}
+
+ul.nav { margin-top: -6px; *margin-top: 10px; *margin-left: 107px; }
+.nav li { float: left;margin-right: 8px; }
+.nav li a { font-size: 18px; padding: 8px; font-weight: bold; }
+
+.footer .nav { padding: 0; margin-top: 20px; margin-left:-5px; *margin-left: 0; }
+.footer .nav li { float: left; margin-left: 0;}
+.footer .nav li a { font-size: 12px; padding: 5px; font-weight: normal; color: #fff; }
+.footer .nav li a:hover { color: #9c6; }
+
+.nav_mini { margin: 4px 0; text-align: right; font-size: 11px; font-weight: normal; }
+.nav_mini span { padding: 0 5px; }
+
+.sub_nav { padding: 0; margin-left: 0; }
+.sub_nav li { padding: 8px 0; min-height: 17px; }
+.sub_nav li a { padding-left: 45px; background: none; font-size: 14px; font-weight: normal; text-decoration: none; color: #4e4e4e; }
+.sub_nav li a:hover, .sub_nav .current_page_item a, .sub_nav .current_page_ancestor a { background: url(images/bt_arrow.jpg) no-repeat left; font-weight: bold; }
+
+/*
+.sub_nav .children li { padding: 8px 0; min-height: 17px; }
+.sub_nav .children li a { padding-left: 45px; background: none; font-size: 14px; font-weight: normal; text-decoration: none; color: #4e4e4e; }
+.sub_nav .children li a:hover, .sub_nav .children .current_page_item a { background: url(images/bt_arrow.jpg) no-repeat left; font-weight: bold; }
+*/
+
+.sub_nav .children li { margin-left: 25px; padding: 8px 0; min-height: 17px; }
+.sub_nav .children li a { padding-left: 0; background: none; font-size: 14px; font-weight: normal; text-decoration: none; color: #4e4e4e; }
+.sub_nav .children li a:hover, .sub_nav .children .current_page_item a { font-weight: bold; }
+
+.current_page_parent a, .current_page_item a, .footer .nav .current_page_parent a, .footer .nav .current_page_item a { color: #9c6; }
+
+
+/**************************
+		Grids
+**************************/
+
+.grid_1 { width: 260px; }
+.grid_2 { width: 690px; }
+.grid_3 { width: 275px; }
+.grid_4 { width: 435px; }
+.grid_5 { width: 235px; }
+.grid_6 { width: 190px; }
+.grid_7 { width: 620px; }
+
+
+/**************************
+		Form
+**************************/
+
+form { margin-top: 7px; }
+
+input[type=text], input.text {
+	width: 230px;
+	height: 22px;
+	margin-right: 5px;
+	padding: 0 5px;
+}
+
+
+/**************************
+		Home
+**************************/
+
+.hidden { display: none; }
+
+.rotator { height: 320px; padding: 0 45px; color: #4e4e4e; }
+.rotator img { margin-top: 35px; overflow: visible; padding-right: 5px;}
+
+#btprev, #btnext {
+	width: 37px;
+	height: 37px;
+	position: relative;
+  margin-top: -250px;
+  cursor: pointer;
+  *cursor: hand;
+}
+
+#btprev {
+	background: url(images/bt_prev.png) no-repeat;
+  float: left;
+  margin-left: -63px;
+}
+
+#btnext {
+	background: url(images/bt_next.png) no-repeat;
+  float: right;
+  margin-right: -63px;
+  *margin-left: 900px;
+}
+
+.home_blocks {
+	background: #fff url(images/bg_container.png) repeat-x;
+	padding: 60px 45px 35px 45px;
+}
+.home_blocks h3 { font-size: 26px; }
+.home_blocks h5 { font-size: 16px; }
+.home_blocks b { font-size: 12px; line-height: 24px;}
+.home_blocks p { line-height: 20px; }
+
+.block_border {
+	border-right: 1px solid #ccc;
+	margin-right: 20px;
+}
+
+.block_margin {
+	margin-right: 20px;
+}
+
+.block_branded {
+	background: url(images/home_branded_community.jpg) no-repeat top left;
+	padding-left: 55px;
+	min-height: 36px;
+}
+
+.block_embedded {
+	background: url(images/home_embedded_store.jpg) no-repeat top left;
+	padding-left: 55px;
+	min-height: 36px;
+}
+
+.block_private {
+	background: url(images/home_private_sales.jpg) no-repeat top left;
+	padding-left: 55px;
+	min-height: 36px;
+}
+
+.learn_more a {
+	font-size: 18px;
+	color: #9c6;
+}
+
+
+
+/**************************
+		Sub
+**************************/
+
+.sub_header {
+	padding: 8px 0 0 45px;
+	color: #369;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.sub_header_content { padding: 10px 0 40px 45px; color: #4e4e4e; line-height: 20px; }
+
+.sub_buttons {
+	margin-top: 20px;
+}
+
+.sub_contact {
+	background: url(images/contactus.png) no-repeat;
+	width: 199px;
+	height: 45px;
+	padding: 7px 0;
+	float: right;
+}
+
+.sub_request {
+	background: url(images/requestdemo.png) no-repeat;
+	width: 199px;
+	height: 45px;
+	padding: 7px 0;
+	float: right;
+}
+
+.sub_subscribe { padding: 15px 0 25px 45px;  width: 235px; }
+.sub_subscribe input[type=text], .sub_subscribe input.text { width: 145px; }
+
+p.readmore a { color: #9c6; text-decoration: none; }
+
+.time { text-transform: uppercase; }
+
+.font_normal { text-transform: none; padding-top: 20px; }
+
+.post_facebook { padding: 0; margin: 0; height: 40px; }
+iframe.twitter-share-button { display: none; visibility: hidden; } /* hide twitter button on pages but not on posts */
+.commentwrapper { margin-top: -100px; }
